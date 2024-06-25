@@ -1,0 +1,10 @@
+# Stores VSCode versions used for testing VSCode extensions
+.vs
+
+# ConsoleApp1
+.ConsoleApp1\ConsoleApp1\bin
+.ConsoleApp1\ConsoleApp1\obj
+
+# TestProject1
+.ConsoleApp1\TestProject1\bin
+.obj
