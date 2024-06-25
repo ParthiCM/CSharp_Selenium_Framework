@@ -14,6 +14,10 @@ namespace TestProject1.Commands
         {
             return new LoginCommand(driver);
         }
+        public static LaunchCommand Launch(IWebDriver driver)
+        {
+            return new LaunchCommand(driver);
+        }
 
 
     }

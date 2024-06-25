@@ -10,14 +10,26 @@ namespace TestProject1.Commands
 {
     public class LoginCommand
     {
-        public  IWebDriver _driver;
-        public  LoginCommand(IWebDriver driver)
+        public LoginElementFactory LoginElementFactory;
+
+        public LoginCommand(IWebDriver driver)
         {
-            _driver = driver;
+            LoginElementFactory = new(driver);
         }
 
-        public LoginCommand SetUserName()
+        public LoginCommand SetUserName(string username)
         {
+            LoginElementFactory.UserName().SendKeys(username);
+            return this;
+        }
+        public LoginCommand SetPassword(string password)
+        {
+            LoginElementFactory.Password().SendKeys(password);
+            return this;
+        }
+        public LoginCommand SubmitButton()
+        {
+            LoginElementFactory.LoginButton().Click();
             return this;
         }
     }
