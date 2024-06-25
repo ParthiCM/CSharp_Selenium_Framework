@@ -4,5 +4,6 @@
 - That creates an object repository for storing all web elements and Its commands. It helps reduce code duplication and improves test case maintenance.
 
 
+[Block Diagram](Scanned Document.pdf)
 
 
