@@ -21,15 +21,15 @@ namespace TestProject1.ElementFactory
         }
         public IWebElement UserName()
         {
-            return wait.Until(ExpectedConditions.ElementIsVisible(By.Name(HTMLName.Username)));
+            return wait.Until(ExpectedConditions.ElementIsVisible(By.Name(Name.Username)));
         }
         public IWebElement Password()
         {
-            return wait.Until(ExpectedConditions.ElementIsVisible(By.Name(HTMLName.Password)));
+            return wait.Until(ExpectedConditions.ElementIsVisible(By.Name(Name.Password)));
         }
         public IWebElement LoginButton()
         {
-            return _driver.FindElement(By.XPath(XpathConstructor.constructXpath(HTMLTagName.Button, "type", "submit")));
+            return _driver.FindElement(By.XPath(XpathConstructor.constructXpath(TagName.Button, "type", "submit")));
         }
     }
 }

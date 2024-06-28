@@ -18,7 +18,10 @@ namespace TestProject1.Commands
         {
             return new LaunchCommand(driver);
         }
-
+        public static DashboardCommand Dashboard(IWebDriver driver)
+        {
+            return new DashboardCommand(driver);
+        }
 
     }
 }

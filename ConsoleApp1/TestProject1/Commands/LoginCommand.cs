@@ -32,5 +32,6 @@ namespace TestProject1.Commands
             LoginElementFactory.LoginButton().Click();
             return this;
         }
+        
     }
 }

@@ -23,7 +23,7 @@ namespace TestProject1.Utilities
     /// 
     ///  Add all ID with in this class
     /// </summary>
-    public static class HTMLId  
+    public static class ID  
     {
         public static string UserId => "UserId";
     }
@@ -31,17 +31,18 @@ namespace TestProject1.Utilities
     /// <summary>
     /// Add all HTML Tag Name with in this class
     /// </summary>
-    public static class HTMLTagName  
+    public static class TagName  
     {
         public static string Button => "button";
         public static string Input => "input";
         public static string Span => "span";
+        public static string H6 => "h6";
     }
 
     /// <summary>
     /// Add all Name with in this class
     /// </summary>
-    public static class HTMLName  
+    public static class Name  
     {
         public static string Username => "username";
         public static string Password => "password";
@@ -50,8 +51,9 @@ namespace TestProject1.Utilities
     /// <summary>
     /// Add all classname with in this class
     /// </summary>
-    public static class HTMLClassName  
+    public static class ClassName  
     {
-        public static string Username => "oxd-input";
+        public static string Username => "oxd-input"; //.oxd-topbar-header-title h6
+        public static string topbar_header_title => "oxd-topbar-header-title";
     }
 }
