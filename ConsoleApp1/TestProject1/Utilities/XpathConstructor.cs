@@ -42,6 +42,7 @@ namespace TestProject1.Utilities
         public static string Input => "input";
         public static string Span => "span";
         public static string H6 => "h6";
+        public static string H1 => "h1";
         public static string Href => "href";
     }
 

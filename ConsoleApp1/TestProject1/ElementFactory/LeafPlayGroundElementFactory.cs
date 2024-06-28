@@ -39,10 +39,15 @@ namespace TestProject1.ElementFactory
         {
             return wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(XpathConstructor.constructXpathWithText("Wait for 2 new Windows to open"))));
         }
-        //public IWebElement windowHandle() 
-        //{
+        public List<string> GetAllHeaders(string headerTag)
+        {
+            List<string> headers = new List<string>();
+            foreach (var item in _driver.FindElements(By.TagName(headerTag)))
+            {
+                headers.Add(item.Text.Trim());
+            }
+            return headers;
+        }
 
-        //}
-        
     }
 }

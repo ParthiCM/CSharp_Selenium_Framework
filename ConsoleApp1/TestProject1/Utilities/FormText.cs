@@ -10,5 +10,6 @@ namespace TestProject1.Utilities
     {
         public static string username => "Admin";
         public static string Password => "admin123";
+        public static string LocatorsAndSeleniumInteractions => "Locators and Selenium Interactions";
     }
 }

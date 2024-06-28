@@ -27,7 +27,7 @@ namespace TestProject1.Commands
 
         public string getCurrentWindow()
         {
-           return __driver.CurrentWindowHandle;
+            return __driver.CurrentWindowHandle;
         }
         public List<string> getAllWindows()
         {
@@ -83,6 +83,16 @@ namespace TestProject1.Commands
             LeafPlayGroundElementFactory.WaitForFewSeconds().Click();
             return this;
         }
-        
+        public bool VerifyHeaderDisplayedInWindow(string headerTag, string textToverify)
+        {
+            try
+            {
+                return LeafPlayGroundElementFactory.GetAllHeaders(headerTag).Contains(textToverify);
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }
