@@ -15,6 +15,10 @@ namespace TestProject1.Utilities
         public static string constructXpath(string attribute, string value)
         {
             return $"//*[@{attribute}=\"{value}\"]";
+        } 
+        public static string constructXpathWithText(string ElementText)
+        {
+            return $"//*[text()=\"{ElementText}\"]";
         }
     }
 
@@ -26,6 +30,7 @@ namespace TestProject1.Utilities
     public static class ID  
     {
         public static string UserId => "UserId";
+        public static string Home => "home";
     }
 
     /// <summary>
@@ -37,6 +42,7 @@ namespace TestProject1.Utilities
         public static string Input => "input";
         public static string Span => "span";
         public static string H6 => "h6";
+        public static string Href => "href";
     }
 
     /// <summary>

@@ -22,6 +22,10 @@ namespace TestProject1.Commands
         {
             return new DashboardCommand(driver);
         }
+        public static PlayGroundCommand Windows(IWebDriver driver)
+        {
+            return new PlayGroundCommand(driver);
+        }
 
     }
 }
